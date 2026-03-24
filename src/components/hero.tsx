@@ -98,9 +98,7 @@ export function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-up-delay-400 justify-center lg:justify-start">
             <a
-              href="https://instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:alipioallen5@gmail.com"
               className="group bg-white border-2 border-black text-black px-6 py-3 sm:px-8 sm:py-4 rounded-full flex items-center justify-center gap-2 sm:gap-3 hover:bg-black hover:text-white hover:scale-105 hover:rotate-1 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer text-sm sm:text-base"
             >
               <svg
