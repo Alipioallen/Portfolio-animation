@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 
-const phrases = ["Inteligencia Artificial", "Desarrollador Web"];
+const phrases = ["Artificial Intelligence", "Web Developer"];
 
 export function Hero() {
   const [displayedText, setDisplayedText] = useState("");
@@ -12,7 +12,7 @@ export function Hero() {
   const currentCharIndexRef = useRef(0);
 
   useEffect(() => {
-    // Animación de entrada para el hero
+    // Hero entrance animation
     setIsVisible(true);
     
     let timeoutId: NodeJS.Timeout;
@@ -23,23 +23,23 @@ export function Hero() {
         currentCharIndexRef.current++;
         timeoutId = setTimeout(typeText, 100);
       } else {
-        // Cuando termine de escribir, esperar 2 segundos, hacer fade out
+        // When finished typing, wait 2 seconds, fade out
         timeoutId = setTimeout(() => {
           setOpacity(0);
           timeoutId = setTimeout(() => {
-            // Cambiar a la siguiente frase
+            // Change to next phrase
             currentPhraseIndexRef.current = (currentPhraseIndexRef.current + 1) % 2;
             currentCharIndexRef.current = 0;
             setDisplayedText("");
             setOpacity(1);
-            // Empezar a escribir la nueva frase
+            // Start writing new phrase
             setTimeout(typeText, 100);
           }, 300);
         }, 2000);
       }
     };
 
-    // Esperar un poco antes de empezar a escribir
+    // Wait a bit before starting to write
     timeoutId = setTimeout(() => {
       typeText();
     }, 500);
@@ -50,7 +50,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section id="inicio" className={`min-h-screen flex items-center justify-center px-4 sm:px-6 py-20 pt-32 sm:pt-20 transition-all duration-1000 ${
+    <section id="home" className={`min-h-screen flex items-center justify-center px-4 sm:px-6 py-20 pt-32 sm:pt-20 transition-all duration-1000 ${
       isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
     }`}>
       <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
@@ -58,9 +58,9 @@ export function Hero() {
         <div className="space-y-6 sm:space-y-8 animate-fade-up text-center lg:text-left">
           <div className="space-y-3 sm:space-y-4">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight transform transition-all duration-700 hover:scale-105">
-              Hola, soy{" "}
+              Hello, I'm{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 animate-pulse">
-                Luis
+                Allen
               </span>
             </h1>
 
@@ -76,9 +76,7 @@ export function Hero() {
           </div>
 
           <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0 font-light tracking-wide transform transition-all duration-700 hover:translate-x-2 hover:text-gray-900">
-            Soy estudiante de <span className="font-semibold text-gray-900 bg-gradient-to-r from-gray-100 to-transparent px-2 py-1 rounded">Inteligencia Artificial</span> y desarrollador web. Me
-            apasiona crear, aprender y llevar mis ideas a la realidad a través
-            de la programación y creatividad.
+            I'm a student of <span className="font-semibold text-gray-900 bg-gradient-to-r from-gray-100 to-transparent px-2 py-1 rounded">Artificial Intelligence</span> and web developer. I'm passionate about creating, learning and bringing my ideas to life through programming and creativity.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-up-delay-400 justify-center lg:justify-start">
@@ -102,7 +100,7 @@ export function Hero() {
                 <path d="M5 12h14" />
                 <polyline points="12 5 19 12 12 19" />
               </svg>
-              <span className="font-medium">Contratar</span>
+              <span className="font-medium">Hire Me</span>
             </a>
             <a 
               href="/cv.pdf" 
@@ -125,13 +123,13 @@ export function Hero() {
               <polyline points="7 10 12 15 17 10" />
               <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
-            <span className="font-medium">Descargar CV</span>
+            <span className="font-medium">Download CV</span>
           </a>
           </div>
 
           <div className="border-t border-gray-200 pt-6 sm:pt-8 transform transition-all duration-500 hover:border-gray-300">
             <p className="text-xs font-semibold text-gray-500 mb-3 tracking-widest uppercase hover:text-gray-900 transition-colors duration-300 text-center lg:text-left">
-              Sígueme
+              Follow Me
             </p>
             <div className="flex gap-4 justify-center lg:justify-start">
               <a
@@ -190,7 +188,7 @@ export function Hero() {
             <div className="absolute inset-3 sm:inset-4 rounded-2xl overflow-hidden pointer-events-none">
               <img
                 src="/me.jpg"
-                alt="Luis"
+                alt="Allen"
                 className="w-full h-full object-contain"
               />
             </div>

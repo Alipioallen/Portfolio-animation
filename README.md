@@ -1,43 +1,43 @@
-# Página Personal
+# Personal Portfolio
 
-Guía breve para clonar, instalar y ejecutar el proyecto, cualquier duda sigueme en Instagram. 😁
+A brief guide to clone, install and run the project. If you have any questions, follow me on Instagram. 😁
 
 [![Instagram](https://img.shields.io/badge/Instagram-@luiscortespenguin-E4405F?logo=instagram&logoColor=white)](https://instagram.com/luiscortespenguin)
 
-## Requisitos
-- Node.js 18+ (recomendado 20)
-- npm 9+ o pnpm/yarn
+## Requirements
+- Node.js 18+ (recommended 20)
+- npm 9+ or pnpm/yarn
 
-## Instalación
+## Installation
 ```bash
 git clone <https://github.com/luisjosuecortes/Portafolio1.git>
-cd paginaPersonal
+cd personalPortfolio
 npm install
 ```
 
-## Desarrollo
+## Development
 ```bash
-# Para correr el proyecto y verlo, despues vas a la APP
+# To run the project and see it, then go to the APP
 npm run dev
 ```
 
-App disponible en `http://localhost:3000`.
+App available at `http://localhost:3000`.
 
-## Build y producción
+## Build and Production
 ```bash
 npm run build
 npm start
 ```
 
-## Redes sociales (sígueme y da ⭐ al repo)
+## Social Media (follow me and star ⭐ the repo)
 
-Por favor, apóyame dando una estrella a este repositorio y siguiéndome en mis redes. ¡Esto me ayuda muchísimo a seguir creando!
+Please support me by starring this repository and following me on my social networks. This helps me a lot to keep creating!
 
 - Instagram: `https://instagram.com/luiscortespenguin`
 - LinkedIn: `https://www.linkedin.com/in/luis-cort%C3%A9s-penguin/`
 - GitHub: `https://github.com/luisjosuecortes`
 
-## Estructura de carpetas
+## Folder Structure
 ```text
 .
 ├─ public/
@@ -49,17 +49,17 @@ Por favor, apóyame dando una estrella a este repositorio y siguiéndome en mis 
 ├─ src/
 │  ├─ app/
 │  │  ├─ layout.tsx        # Root layout (App Router)
-│  │  ├─ page.tsx          # Página principal
-│  │  └─ globals.css       # Estilos globales + animaciones
+│  │  ├─ page.tsx          # Main page
+│  │  └─ globals.css       # Global styles + animations
 │  └─ components/
-│     ├─ header.tsx        # Navegación fija con scroll spy
-│     ├─ hero.tsx          # Sección principal (typing y CTA)
-│     ├─ about.tsx         # Sección Acerca de Mí
-│     ├─ projects.tsx      # Proyectos con animación on-scroll
-│     ├─ services.tsx      # Servicios + fondo animado
+│     ├─ header.tsx        # Fixed navigation with scroll spy
+│     ├─ hero.tsx          # Main section (typing and CTA)
+│     ├─ about.tsx         # About Me section
+│     ├─ projects.tsx      # Projects with on-scroll animation
+│     ├─ services.tsx      # Services + animated background
 │     ├─ footer.tsx        # Footer
-│     ├─ loading-screen.tsx# Pantalla de carga inicial
-│     └─ page-wrapper.tsx  # Wrapper que gestiona loading/scroll
+│     ├─ loading-screen.tsx# Initial loading screen
+│     └─ page-wrapper.tsx  # Wrapper that manages loading/scroll
 ├─ eslint.config.mjs
 ├─ next.config.ts
 ├─ tsconfig.json
@@ -67,21 +67,21 @@ Por favor, apóyame dando una estrella a este repositorio y siguiéndome en mis 
 └─ postcss.config.mjs
 ```
 
-## Notas
-- Este proyecto usa Next.js (App Router), Tailwind CSS y componentes client/server mixtos.
-- Las imágenes del `hero` y `about` deben existir en `public/`.
-- El PDF del CV se sirve desde `public/cv.pdf`.
+## Notes
+- This project uses Next.js (App Router), Tailwind CSS and mixed client/server components.
+- The images for `hero` and `about` must exist in `public/`.
+- The CV PDF is served from `public/cv.pdf`.
 
-## Deploy (Vercel sugerido)
-1. Importa el repo en Vercel.
-2. Framework: Next.js (auto-detección).
-3. Variables de entorno (si fueran necesarias) en el panel de Vercel.
+## Deploy (Vercel suggested)
+1. Import the repo in Vercel.
+2. Framework: Next.js (auto-detection).
+3. Environment variables (if necessary) in the Vercel dashboard.
 4. Deploy.
 
 ---
 
-Si este proyecto te fue útil o te gustó el resultado:
+If this project was useful to you or you liked the result:
 
-- Da ⭐ al repositorio.
-- Sígueme en `Instagram`, `LinkedIn` y `GitHub` para más proyectos y actualizaciones. 
+- Star ⭐ the repository.
+- Follow me on `Instagram`, `LinkedIn` and `GitHub` for more projects and updates.
 

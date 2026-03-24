@@ -32,7 +32,7 @@ export function Projects() {
       id: 1,
       title: "Penguin Academy",
       description:
-        "Plataforma educativa especializada en Inteligencia Artificial, programación y matemáticas aplicadas.",
+        "Educational platform specialized in Artificial Intelligence, programming and applied mathematics.",
       technologies: ["Next.js", "React", "TypeScript", "Tailwind"],
       demo: "https://www.penguinmy.xyz/",
       image: "/proyecto1.png",
@@ -42,7 +42,7 @@ export function Projects() {
       id: 2,
       title: "TREEJS",
       description:
-        "Aplicación web interactiva con animaciones 3D creadas con ThreeJS.",
+        "Interactive web application with 3D animations created with ThreeJS.",
       technologies: ["ThreeJS", "JavaScript", "WebGL", "3D"],
       demo: "https://treejsprojects.vercel.app/",
       image: "/proyecto2.png",
@@ -52,7 +52,7 @@ export function Projects() {
       id: 3,
       title: "Entropy Evolve",
       description:
-        "Sistema de automejora para agentes de IA, diseñado para dominios complejos con ingeniería de software como caso de prueba.",
+        "Self-improvement system for AI agents, designed for complex domains with software engineering as a test case.",
       technologies: ["Python", "AI", "Machine Learning"],
       github: "https://github.com/luisjosuecortes/EntropyEvolve",
       image: "/proyecto3.png",
@@ -63,7 +63,7 @@ export function Projects() {
   return (
     <section
       ref={sectionRef}
-      id="proyectos"
+      id="projects"
       className={`min-h-screen flex items-center justify-center px-4 sm:px-6 py-20 bg-white transition-all duration-1000 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
@@ -71,10 +71,10 @@ export function Projects() {
       <div className="max-w-7xl w-full">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-3 sm:mb-4">
-            Mis <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600">Proyectos</span>
+            My <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600">Projects</span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
-            Algunos de los proyectos en los que he trabajado
+            Some of the projects I have worked on
           </p>
         </div>
 
@@ -137,7 +137,7 @@ export function Projects() {
                         <polyline points="15 3 21 3 21 9" />
                         <line x1="10" y1="14" x2="21" y2="3" />
                       </svg>
-                      <span className="text-sm font-semibold">Ver Proyecto</span>
+                      <span className="text-sm font-semibold">View Project</span>
                     </>
                   ) : (
                     <>

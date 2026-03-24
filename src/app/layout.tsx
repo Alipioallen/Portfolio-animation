@@ -4,8 +4,8 @@ import { Header } from "@/components/header";
 import { PageWrapper } from "@/components/page-wrapper";
 
 export const metadata: Metadata = {
-  title: "Pagina Personal ",
-  description: "Pagina Personal de Luis Cortes",
+  title: "Personal Portfolio",
+  description: "Personal Portfolio of Allen Alipio",
 };
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="en">
       <body>
         <PageWrapper>
           <Header />

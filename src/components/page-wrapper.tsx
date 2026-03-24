@@ -12,20 +12,20 @@ export function PageWrapper({ children }: PageWrapperProps) {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    // Deshabilitar scroll durante la carga
+    // Disable scroll during loading
     document.body.style.overflow = "hidden";
 
-    // Simular tiempo de carga
+    // Simulate loading time
     const timer = setTimeout(() => {
       setIsLoading(false);
-      
-      // Permitir que la transición del loader se complete
+
+      // Allow loader transition to complete
       setTimeout(() => {
         setShowContent(true);
-        // Habilitar scroll después de que el contenido esté visible
+        // Enable scroll after content is visible
         document.body.style.overflow = "auto";
       }, 500);
-    }, 2000); // 2 segundos de animación
+    }, 2000); // 2 seconds of animation
 
     return () => {
       clearTimeout(timer);

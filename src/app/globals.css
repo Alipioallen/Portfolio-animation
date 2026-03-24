@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
-/* Establecer fondo blanco */
+/* Set white background */
 body {
   background-color: #fff;
   margin: 0;
   padding: 0;
 }
 
-/* Animaciones de fade up */
+/* Fade up animations */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -54,7 +54,7 @@ body {
   opacity: 0;
 }
 
-/* Animación de flotación */
+/* Floating animation */
 @keyframes float {
   0%, 100% {
     transform: translateY(0) rotate(0deg);
@@ -70,7 +70,7 @@ body {
   animation: float infinite ease-in-out;
 }
 
-/* Animación de shimmer para la barra de progreso */
+/* Shimmer animation for progress bar */
 @keyframes shimmer {
   0% {
     transform: translateX(-100%);

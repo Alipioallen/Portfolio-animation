@@ -30,7 +30,7 @@ export function About() {
   return (
     <section
       ref={sectionRef}
-      id="acerca"
+      id="about"
       className={`min-h-screen flex items-center justify-center px-6 py-20 bg-gray-50 transition-all duration-1000 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
@@ -41,7 +41,7 @@ export function About() {
           <div className="w-96 h-[32rem] lg:w-[30rem] lg:h-[40rem] overflow-hidden rounded-3xl shadow-2xl">
             <img
               src="/me2.jpg"
-              alt="Luis Cortés"
+              alt="Allen Alipio"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             />
           </div>
@@ -55,9 +55,9 @@ export function About() {
                  opacity: 0 
                }}>
             <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
-              Acerca de{" "}
+              About{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 animate-pulse">
-                Mí
+                Me
               </span>
             </h2>
           </div>
@@ -68,12 +68,10 @@ export function About() {
                  opacity: 0 
                }}>
             <h3 className="text-2xl font-bold text-gray-900 mb-3">
-              Luis Cortés
+              Allen Alipio
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Estudiante de Inteligencia Artificial en sus últimos semestres en
-              la Universidad Autónoma del Estado de Morelos. Apasionado por la
-              programación, el desarrollo web y la ciencia de datos.
+              Artificial Intelligence student in the final semesters at the Autonomous University of the State of Morelos. Passionate about programming, web development and data science.
             </p>
           </div>
 
@@ -83,16 +81,16 @@ export function About() {
                  opacity: 0 
                }}>
             <h4 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <span className="inline-block w-1 h-6 bg-gray-900 rounded-full animate-pulse" /> Educación
+              <span className="inline-block w-1 h-6 bg-gray-900 rounded-full animate-pulse" /> Education
             </h4>
             <div className="space-y-2 text-gray-600">
               <p className="hover:text-gray-900 transition-colors">
                 <span className="font-semibold">
-                  Universidad Autónoma del Estado de Morelos (UAEM)
+                  Autonomous University of the State of Morelos (UAEM)
                 </span>
               </p>
-              <p className="text-sm hover:text-gray-900 transition-colors">Licenciatura en Inteligencia Artificial</p>
-              <p className="text-sm hover:text-gray-900 transition-colors">Actualmente estudiando</p>
+              <p className="text-sm hover:text-gray-900 transition-colors">Bachelor's degree in Artificial Intelligence</p>
+              <p className="text-sm hover:text-gray-900 transition-colors">Currently studying</p>
             </div>
           </div>
 
@@ -102,20 +100,20 @@ export function About() {
                  opacity: 0 
                }}>
             <h4 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <span className="inline-block w-1 h-6 bg-gray-900 rounded-full animate-pulse" /> Experiencia
+              <span className="inline-block w-1 h-6 bg-gray-900 rounded-full animate-pulse" /> Experience
             </h4>
             <div className="space-y-2 text-gray-600">
               <p className="hover:text-gray-900 transition-colors">
                 <span className="font-semibold">
-                  Asistente en Investigación
+                  Research Assistant
                 </span>{" "}
                 - UAEM CINC Morelos
               </p>
               <p className="text-sm hover:text-gray-900 transition-colors">
-                Proyectos en Ciencia de Datos y su aplicación en Series de
-                Tiempo (EEG, MEG, fMRI, Ritmo Cardíaco)
+                Projects in Data Science and its application in Time Series
+                (EEG, MEG, fMRI, Heart Rate)
               </p>
-              <p className="text-sm hover:text-gray-900 transition-colors">2025 – Actualmente</p>
+              <p className="text-sm hover:text-gray-900 transition-colors">2025 – Currently</p>
             </div>
           </div>
 
@@ -125,7 +123,7 @@ export function About() {
                  opacity: 0 
                }}>
             <h4 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <span className="inline-block w-1 h-6 bg-gray-900 rounded-full animate-pulse" /> Habilidades Técnicas
+              <span className="inline-block w-1 h-6 bg-gray-900 rounded-full animate-pulse" /> Technical Skills
             </h4>
             <div className="flex flex-wrap gap-2">
               {[

@@ -3,11 +3,11 @@
 import { useState, useEffect } from "react";
 
 export function Header() {
-  const [activeSection, setActiveSection] = useState("inicio");
+  const [activeSection, setActiveSection] = useState("home");
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Animación de entrada para el header
+    // Header entrance animation
     setIsVisible(true);
   }, []);
 
@@ -31,7 +31,7 @@ export function Header() {
       observerOptions
     );
 
-    const sections = ["inicio", "acerca", "proyectos", "servicios"];
+    const sections = ["home", "about", "projects", "services"];
     sections.forEach((id) => {
       const element = document.getElementById(id);
       if (element) observer.observe(element);
@@ -53,9 +53,9 @@ export function Header() {
     }`}>
       <nav className="bg-white/95 backdrop-blur-md rounded-full shadow-xl border border-gray-100 px-2 py-2 sm:px-4 sm:py-3 flex items-center justify-around sm:justify-center sm:gap-2">
         <button
-          onClick={() => scrollToSection("inicio")}
+          onClick={() => scrollToSection("home")}
           className={`rounded-full px-3 py-2 sm:px-5 sm:py-2.5 flex items-center gap-1 sm:gap-2 transition-all duration-200 hover:scale-105 cursor-pointer ${
-            activeSection === "inicio"
+            activeSection === "home"
               ? "bg-black text-white"
               : "text-gray-700 hover:bg-gray-100"
           }`}
@@ -73,12 +73,12 @@ export function Header() {
             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
             <polyline points="9 22 9 12 15 12 15 22" />
           </svg>
-          <span className="font-semibold hidden sm:inline text-xs sm:text-base">Inicio</span>
+          <span className="font-semibold hidden sm:inline text-xs sm:text-base">Home</span>
         </button>
         <button
-          onClick={() => scrollToSection("acerca")}
+          onClick={() => scrollToSection("about")}
           className={`rounded-full px-3 py-2 sm:px-5 sm:py-2.5 flex items-center gap-1 sm:gap-2 transition-all duration-200 hover:scale-105 cursor-pointer ${
-            activeSection === "acerca"
+            activeSection === "about"
               ? "bg-black text-white"
               : "text-gray-700 hover:bg-gray-100"
           }`}
@@ -96,12 +96,12 @@ export function Header() {
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
             <circle cx="12" cy="7" r="4" />
           </svg>
-          <span className="font-semibold hidden sm:inline text-xs sm:text-base">Acerca</span>
+          <span className="font-semibold hidden sm:inline text-xs sm:text-base">About</span>
         </button>
         <button
-          onClick={() => scrollToSection("proyectos")}
+          onClick={() => scrollToSection("projects")}
           className={`rounded-full px-3 py-2 sm:px-5 sm:py-2.5 flex items-center gap-1 sm:gap-2 transition-all duration-200 hover:scale-105 cursor-pointer ${
-            activeSection === "proyectos"
+            activeSection === "projects"
               ? "bg-black text-white"
               : "text-gray-700 hover:bg-gray-100"
           }`}
@@ -118,12 +118,12 @@ export function Header() {
           >
             <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
           </svg>
-          <span className="font-semibold hidden sm:inline text-xs sm:text-base">Proyectos</span>
+          <span className="font-semibold hidden sm:inline text-xs sm:text-base">Projects</span>
         </button>
         <button
-          onClick={() => scrollToSection("servicios")}
+          onClick={() => scrollToSection("services")}
           className={`rounded-full px-3 py-2 sm:px-5 sm:py-2.5 flex items-center gap-1 sm:gap-2 transition-all duration-200 hover:scale-105 cursor-pointer ${
-            activeSection === "servicios"
+            activeSection === "services"
               ? "bg-black text-white"
               : "text-gray-700 hover:bg-gray-100"
           }`}
@@ -140,7 +140,7 @@ export function Header() {
           >
             <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
           </svg>
-          <span className="font-semibold hidden sm:inline text-xs sm:text-base">Servicios</span>
+          <span className="font-semibold hidden sm:inline text-xs sm:text-base">Services</span>
         </button>
       </nav>
     </header>

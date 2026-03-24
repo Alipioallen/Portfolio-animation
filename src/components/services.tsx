@@ -30,8 +30,8 @@ export function Services() {
   const services = [
     {
       id: 1,
-      title: "Desarrollo Web",
-      description: "Creación de aplicaciones web modernas y responsivas con las últimas tecnologías",
+      title: "Web Development",
+      description: "Creation of modern and responsive web applications with the latest technologies",
       icon: (
         <svg
           width="40"
@@ -52,8 +52,8 @@ export function Services() {
     },
     {
       id: 2,
-      title: "Inteligencia Artificial",
-      description: "Desarrollo de modelos de IA y machine learning para soluciones innovadoras",
+      title: "Artificial Intelligence",
+      description: "Development of AI and machine learning models for innovative solutions",
       icon: (
         <svg
           width="40"
@@ -74,7 +74,7 @@ export function Services() {
     {
       id: 3,
       title: "Full Stack",
-      description: "Soluciones completas desde el backend hasta el frontend, optimizadas y escalables",
+      description: "Complete solutions from backend to frontend, optimized and scalable",
       icon: (
         <svg
           width="40"
@@ -102,12 +102,12 @@ export function Services() {
   return (
     <section
       ref={sectionRef}
-      id="servicios"
+      id="services"
       className={`min-h-screen flex items-center justify-center px-4 sm:px-6 py-20 bg-gray-50 transition-all duration-1000 relative overflow-hidden ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      {/* Animación de fondo flotante */}
+      {/* Floating background animation */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-2 h-32 bg-gray-900/20 rounded-full animate-float" style={{ animationDelay: "0s", animationDuration: "3s" }} />
         <div className="absolute top-40 right-20 w-1 h-24 bg-gray-900/20 rounded-full animate-float" style={{ animationDelay: "1s", animationDuration: "4s" }} />
@@ -122,10 +122,10 @@ export function Services() {
       <div className="max-w-7xl w-full relative z-10">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-3 sm:mb-4">
-            Mis <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600">Servicios</span>
+            My <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600">Services</span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
-            Lo que puedo hacer por ti
+            What I can do for you
           </p>
         </div>
 
@@ -179,7 +179,7 @@ export function Services() {
               <path d="M5 12h14" />
               <polyline points="12 5 19 12 12 19" />
             </svg>
-            <span>Contratame</span>
+            <span>Hire Me</span>
           </a>
         </div>
       </div>
