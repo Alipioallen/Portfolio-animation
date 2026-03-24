@@ -91,7 +91,7 @@ export function Hero() {
             I&apos;m a{" "}
             <span className="font-semibold text-gray-900 bg-gradient-to-r from-gray-100 to-transparent px-2 py-1 rounded">
               Frontend Developer
-            </span>{" "}}
+            </span>{" "}
             with a solid foundation in web development, eager to continue
             growing technical skills in a collaborative team environment.
           </p>
