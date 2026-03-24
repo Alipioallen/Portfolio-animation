@@ -63,7 +63,7 @@ export function Footer() {
             </h4>
             <div className="flex gap-4 justify-center sm:justify-start">
               <a
-                href="https://instagram.com/luiscortespenguin"
+                href="https://instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-pink-500 transition-all hover:scale-110 transform duration-200"
@@ -78,7 +78,7 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/in/luis-cort%C3%A9s-penguin/"
+                href="https://www.linkedin.com/in/allen-alipio-1966b7285/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-500 transition-all hover:scale-110 transform duration-200"
@@ -93,7 +93,7 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://github.com/luisjosuecortes"
+                href="https://github.com/Alipioallen"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-all hover:scale-110 transform duration-200"
