@@ -12,32 +12,33 @@ export function Header() {
   }, []);
 
   useEffect(() => {
-    const observerOptions = {
-      root: null,
-      rootMargin: "-50% 0px -50% 0px",
-      threshold: 0,
-    };
+    const sections = ["home", "about", "skills", "projects", "services"];
 
-    const observerCallback = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
+    const updateActiveSection = () => {
+      const scrollPosition = window.scrollY + 200;
+      let currentSection = "home";
+
+      sections.forEach((id) => {
+        const element = document.getElementById(id);
+        if (!element) return;
+
+        const sectionTop = element.offsetTop;
+        if (scrollPosition >= sectionTop) {
+          currentSection = id;
         }
       });
+
+      setActiveSection(currentSection);
     };
 
-    const observer = new IntersectionObserver(
-      observerCallback,
-      observerOptions
-    );
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    window.addEventListener("resize", updateActiveSection);
 
-    const sections = ["home", "about", "skills", "projects", "services"];
-    sections.forEach((id) => {
-      const element = document.getElementById(id);
-      if (element) observer.observe(element);
-    });
-
-    return () => observer.disconnect();
+    return () => {
+      window.removeEventListener("scroll", updateActiveSection);
+      window.removeEventListener("resize", updateActiveSection);
+    };
   }, []);
 
   const scrollToSection = (sectionId: string) => {
