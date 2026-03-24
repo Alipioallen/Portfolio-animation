@@ -106,7 +106,7 @@ export function About() {
                 </span>
               </p>
               <p className="text-sm hover:text-gray-900 transition-colors">
-                Bachelor's degree in Information Technology
+                Bachelor&apos;s degree in Information Technology
               </p>
               <p className="text-sm hover:text-gray-900 transition-colors">
                 Web and Mobile Development

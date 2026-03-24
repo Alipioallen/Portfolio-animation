@@ -9,7 +9,7 @@ export function Footer() {
               Allen Alipio
             </h3>
             <p className="text-gray-400 leading-relaxed text-sm">
-              'm a Frontend Developer with a solid foundation in web
+              I&apos;m a Frontend Developer with a solid foundation in web
               development, eager to continue growing technical skills in a
               collaborative team environment.
             </p>
