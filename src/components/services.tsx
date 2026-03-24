@@ -31,7 +31,7 @@ export function Services() {
     {
       id: 1,
       title: "Web Development",
-      description: "Creation of modern and responsive web applications with the latest technologies",
+      description: "Building modern, responsive web applications with React and Next.js. Focused on performance, scalability, and user experience.",
       icon: (
         <svg
           width="40"
@@ -52,8 +52,8 @@ export function Services() {
     },
     {
       id: 2,
-      title: "Artificial Intelligence",
-      description: "Development of AI and machine learning models for innovative solutions",
+      title: "Shopify Development",
+      description: "Custom Shopify store development with Liquid coding, app integration, and conversion optimization for e-commerce success.",
       icon: (
         <svg
           width="40"
@@ -65,16 +65,16 @@ export function Services() {
           strokeLinecap="round"
           strokeLinejoin="round"
         >
-          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-          <path d="M3.27 6.96L12 12.01l8.73-5.05" />
-          <path d="M12 22.08V12" />
+          <circle cx="9" cy="21" r="1" />
+          <circle cx="20" cy="21" r="1" />
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
         </svg>
       ),
     },
     {
       id: 3,
-      title: "Full Stack",
-      description: "Complete solutions from backend to frontend, optimized and scalable",
+      title: "Platforms & Templates",
+      description: "Expert development using WordPress, Webflow, Framer, Elementor, Breakdance, and other no-code/low-code platforms.",
       icon: (
         <svg
           width="40"
@@ -86,14 +86,10 @@ export function Services() {
           strokeLinecap="round"
           strokeLinejoin="round"
         >
-          <path d="M8 3H2v4h6V3z" />
-          <path d="M22 3h-6v4h6V3z" />
-          <path d="M8 13H2v4h6v-4z" />
-          <path d="M22 13h-6v4h6v-4z" />
-          <path d="M12 17v4" />
-          <path d="M16 7v4" />
-          <path d="M12 1V3" />
-          <path d="M16 11v2" />
+          <rect x="3" y="3" width="7" height="7" />
+          <rect x="14" y="3" width="7" height="7" />
+          <rect x="14" y="14" width="7" height="7" />
+          <rect x="3" y="14" width="7" height="7" />
         </svg>
       ),
     },
