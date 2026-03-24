@@ -184,45 +184,6 @@ export function About() {
               </div>
             </div>
           </div>
-
-          <div
-            className="transform transition-all duration-700 ease-out"
-            style={{
-              animation: isVisible
-                ? "fadeUp 0.8s ease-out 0.7s forwards"
-                : "none",
-              opacity: 0,
-            }}
-          >
-            <h4 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <span className="inline-block w-1 h-6 bg-gray-900 rounded-full animate-pulse" />{" "}
-              Technical Skills
-            </h4>
-            <div className="flex flex-wrap gap-2">
-              {[
-                "Python",
-                "AI/ML",
-                "PyTorch",
-                "TypeScript",
-                "React",
-                "Node.js",
-                "Git",
-              ].map((skill, index) => (
-                <span
-                  key={skill}
-                  className="px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-full text-sm font-medium hover:bg-gray-900 hover:text-white hover:scale-110 transition-all duration-300 transform hover:rotate-1"
-                  style={{
-                    animation: isVisible
-                      ? `fadeUp 0.5s ease-out ${0.8 + index * 0.05}s forwards`
-                      : "none",
-                    opacity: 0,
-                  }}
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>

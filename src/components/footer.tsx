@@ -30,6 +30,14 @@ export function Footer() {
               </li>
               <li>
                 <a
+                  href="#skills"
+                  className="text-gray-400 hover:text-white transition-colors text-sm duration-200"
+                >
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a
                   href="#projects"
                   className="text-gray-400 hover:text-white transition-colors text-sm duration-200"
                 >
