@@ -6,11 +6,12 @@ export function Footer() {
           {/* Column 1 - Information */}
           <div className="text-center sm:text-left">
             <h3 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-              Allen
+              Allen Alipio
             </h3>
             <p className="text-gray-400 leading-relaxed text-sm">
-              Web Developer and Artificial Intelligence student.
-              Creating innovative solutions with code.
+              'm a Frontend Developer with a solid foundation in web
+              development, eager to continue growing technical skills in a
+              collaborative team environment.
             </p>
           </div>
 
@@ -113,13 +114,10 @@ export function Footer() {
         {/* Divider */}
         <div className="border-t border-gray-900 pt-6 sm:pt-8">
           <p className="text-gray-500 text-center text-xs sm:text-sm">
-            © {new Date().getFullYear()} Penguin Labs. All rights reserved.
+            © {new Date().getFullYear()} Allen Alipio. All rights reserved.
           </p>
         </div>
       </div>
     </footer>
   );
 }
-
-
-
