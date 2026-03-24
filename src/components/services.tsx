@@ -13,7 +13,7 @@ export function Services() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     if (sectionRef.current) {
@@ -31,7 +31,8 @@ export function Services() {
     {
       id: 1,
       title: "Web Development",
-      description: "Building modern, responsive web applications with React and Next.js. Focused on performance, scalability, and user experience.",
+      description:
+        "Building modern, responsive web applications with React and Next.js. Focused on performance, scalability, and user experience.",
       icon: (
         <svg
           width="40"
@@ -53,7 +54,8 @@ export function Services() {
     {
       id: 2,
       title: "Shopify Development",
-      description: "Custom Shopify store development with Liquid coding, app integration, and conversion optimization for e-commerce success.",
+      description:
+        "Custom Shopify store development with Liquid coding, app integration, and conversion optimization for e-commerce success.",
       icon: (
         <svg
           width="40"
@@ -74,7 +76,8 @@ export function Services() {
     {
       id: 3,
       title: "Platforms & Templates",
-      description: "Expert development using WordPress, Webflow, Framer, Elementor, Breakdance, and other no-code/low-code platforms.",
+      description:
+        "Expert development using WordPress, Webflow, Framer, Elementor, Breakdance, and other no-code/low-code platforms.",
       icon: (
         <svg
           width="40"
@@ -105,20 +108,47 @@ export function Services() {
     >
       {/* Floating background animation */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-2 h-32 bg-gray-900/20 rounded-full animate-float" style={{ animationDelay: "0s", animationDuration: "3s" }} />
-        <div className="absolute top-40 right-20 w-1 h-24 bg-gray-900/20 rounded-full animate-float" style={{ animationDelay: "1s", animationDuration: "4s" }} />
-        <div className="absolute bottom-40 left-1/4 w-2 h-40 bg-gray-900/20 rounded-full animate-float" style={{ animationDelay: "2s", animationDuration: "3.5s" }} />
-        <div className="absolute top-1/3 right-1/3 w-1 h-20 bg-gray-900/20 rounded-full animate-float" style={{ animationDelay: "0.5s", animationDuration: "4.5s" }} />
-        <div className="absolute bottom-20 right-1/4 w-2 h-28 bg-gray-900/20 rounded-full animate-float" style={{ animationDelay: "1.5s", animationDuration: "3s" }} />
-        <div className="absolute top-1/2 left-1/3 w-1 h-36 bg-gray-900/20 rounded-full animate-float" style={{ animationDelay: "2.5s", animationDuration: "4s" }} />
-        <div className="absolute bottom-1/3 right-10 w-2 h-32 bg-gray-900/20 rounded-full animate-float" style={{ animationDelay: "0.8s", animationDuration: "3.5s" }} />
-        <div className="absolute top-20 right-1/2 w-1 h-24 bg-gray-900/20 rounded-full animate-float" style={{ animationDelay: "1.8s", animationDuration: "4s" }} />
+        <div
+          className="absolute top-20 left-10 w-2 h-32 bg-gray-900/20 rounded-full animate-float"
+          style={{ animationDelay: "0s", animationDuration: "3s" }}
+        />
+        <div
+          className="absolute top-40 right-20 w-1 h-24 bg-gray-900/20 rounded-full animate-float"
+          style={{ animationDelay: "1s", animationDuration: "4s" }}
+        />
+        <div
+          className="absolute bottom-40 left-1/4 w-2 h-40 bg-gray-900/20 rounded-full animate-float"
+          style={{ animationDelay: "2s", animationDuration: "3.5s" }}
+        />
+        <div
+          className="absolute top-1/3 right-1/3 w-1 h-20 bg-gray-900/20 rounded-full animate-float"
+          style={{ animationDelay: "0.5s", animationDuration: "4.5s" }}
+        />
+        <div
+          className="absolute bottom-20 right-1/4 w-2 h-28 bg-gray-900/20 rounded-full animate-float"
+          style={{ animationDelay: "1.5s", animationDuration: "3s" }}
+        />
+        <div
+          className="absolute top-1/2 left-1/3 w-1 h-36 bg-gray-900/20 rounded-full animate-float"
+          style={{ animationDelay: "2.5s", animationDuration: "4s" }}
+        />
+        <div
+          className="absolute bottom-1/3 right-10 w-2 h-32 bg-gray-900/20 rounded-full animate-float"
+          style={{ animationDelay: "0.8s", animationDuration: "3.5s" }}
+        />
+        <div
+          className="absolute top-20 right-1/2 w-1 h-24 bg-gray-900/20 rounded-full animate-float"
+          style={{ animationDelay: "1.8s", animationDuration: "4s" }}
+        />
       </div>
 
       <div className="max-w-7xl w-full relative z-10">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-3 sm:mb-4">
-            My <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600">Services</span>
+            My{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600">
+              Services
+            </span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
             What I can do for you
@@ -138,7 +168,7 @@ export function Services() {
             >
               {/* Decorative background element */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-gray-900/5 to-transparent rounded-full blur-2xl group-hover:from-gray-900/10 transition-colors duration-500" />
-              
+
               <div className="relative z-10">
                 <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-gray-900 to-gray-700 rounded-2xl flex items-center justify-center text-white mb-4 sm:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg mx-auto md:mx-0">
                   {service.icon}
@@ -154,8 +184,11 @@ export function Services() {
           ))}
         </div>
 
-        <div className="flex justify-center mt-12 sm:mt-16 animate-fade-up" style={{ animationDelay: "0.5s" }}>
-          <a 
+        <div
+          className="flex justify-center mt-12 sm:mt-16 animate-fade-up"
+          style={{ animationDelay: "0.5s" }}
+        >
+          <a
             href="https://instagram.com/luiscortespenguin"
             target="_blank"
             rel="noopener noreferrer"
@@ -182,4 +215,3 @@ export function Services() {
     </section>
   );
 }
-

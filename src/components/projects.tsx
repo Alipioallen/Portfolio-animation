@@ -13,7 +13,7 @@ export function Projects() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     if (sectionRef.current) {
@@ -30,33 +30,30 @@ export function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Penguin Academy",
-      description:
-        "Educational platform specialized in Artificial Intelligence, programming and applied mathematics.",
-      technologies: ["Next.js", "React", "TypeScript", "Tailwind"],
-      demo: "https://www.penguinmy.xyz/",
-      image: "/proyecto1.png",
+      title: "Chunk Nibbles",
+      description: "Online store for premium snack products",
+      technologies: ["Shopify", "Rebuy", "Liquid", "Javascript"],
+      demo: "https://chunknibbles.com",
+      image: "/chunks.png",
       showOnlyDemo: true,
     },
     {
       id: 2,
-      title: "TREEJS",
-      description:
-        "Interactive web application with 3D animations created with ThreeJS.",
-      technologies: ["ThreeJS", "JavaScript", "WebGL", "3D"],
-      demo: "https://treejsprojects.vercel.app/",
-      image: "/proyecto2.png",
+      title: "Radical Music",
+      description: "Multimedia site for artists and studios",
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind"],
+      demo: "http://radicalmusic.netlify.app/",
+      image: "/radical.png",
       showOnlyDemo: true,
     },
     {
       id: 3,
-      title: "Entropy Evolve",
-      description:
-        "Self-improvement system for AI agents, designed for complex domains with software engineering as a test case.",
-      technologies: ["Python", "AI", "Machine Learning"],
-      github: "https://github.com/luisjosuecortes/EntropyEvolve",
-      image: "/proyecto3.png",
-      showOnlyDemo: false,
+      title: "Clohane",
+      description: "Site for beautiful Interiors",
+      technologies: ["WordPress", "Elementor", "PHP"],
+      demo: "https://clohane.ie",
+      image: "/clohane.png",
+      showOnlyDemo: true,
     },
   ];
 
@@ -71,7 +68,10 @@ export function Projects() {
       <div className="max-w-7xl w-full">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-3 sm:mb-4">
-            My <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600">Projects</span>
+            My{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600">
+              Projects
+            </span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
             Some of the projects I have worked on
@@ -137,7 +137,9 @@ export function Projects() {
                         <polyline points="15 3 21 3 21 9" />
                         <line x1="10" y1="14" x2="21" y2="3" />
                       </svg>
-                      <span className="text-sm font-semibold">View Project</span>
+                      <span className="text-sm font-semibold">
+                        View Project
+                      </span>
                     </>
                   ) : (
                     <>
@@ -175,4 +177,3 @@ export function Projects() {
     </section>
   );
 }
-
