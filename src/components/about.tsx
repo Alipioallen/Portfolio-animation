@@ -13,7 +13,7 @@ export function About() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     if (sectionRef.current) {
@@ -40,7 +40,7 @@ export function About() {
         <div className="flex justify-center lg:justify-start animate-fade-up">
           <div className="w-96 h-[32rem] lg:w-[30rem] lg:h-[40rem] overflow-hidden rounded-3xl shadow-2xl">
             <img
-              src="/me2.jpg"
+              src="/allen2.jpg"
               alt="Allen Alipio"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             />
@@ -49,11 +49,15 @@ export function About() {
 
         {/* Right column - Information */}
         <div className="space-y-8">
-          <div className="transform transition-all duration-700 ease-out hover:scale-105" 
-               style={{ 
-                 animation: isVisible ? 'fadeUp 0.8s ease-out 0.3s forwards' : 'none',
-                 opacity: 0 
-               }}>
+          <div
+            className="transform transition-all duration-700 ease-out hover:scale-105"
+            style={{
+              animation: isVisible
+                ? "fadeUp 0.8s ease-out 0.3s forwards"
+                : "none",
+              opacity: 0,
+            }}
+          >
             <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
               About{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 animate-pulse">
@@ -62,68 +66,137 @@ export function About() {
             </h2>
           </div>
 
-          <div className="transform transition-all duration-700 ease-out hover:translate-x-2" 
-               style={{ 
-                 animation: isVisible ? 'fadeUp 0.8s ease-out 0.4s forwards' : 'none',
-                 opacity: 0 
-               }}>
+          <div
+            className="transform transition-all duration-700 ease-out hover:translate-x-2"
+            style={{
+              animation: isVisible
+                ? "fadeUp 0.8s ease-out 0.4s forwards"
+                : "none",
+              opacity: 0,
+            }}
+          >
             <h3 className="text-2xl font-bold text-gray-900 mb-3">
               Allen Alipio
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Artificial Intelligence student in the final semesters at the Autonomous University of the State of Morelos. Passionate about programming, web development and data science.
+              I'm a Frontend Developer with a solid foundation in web
+              development, demonstrated ability to contribute effectively to
+              diverse projects while maintaining a focus on frontend
+              development.
             </p>
           </div>
 
-          <div className="transform transition-all duration-700 ease-out hover:translate-x-2" 
-               style={{ 
-                 animation: isVisible ? 'fadeUp 0.8s ease-out 0.5s forwards' : 'none',
-                 opacity: 0 
-               }}>
+          <div
+            className="transform transition-all duration-700 ease-out hover:translate-x-2"
+            style={{
+              animation: isVisible
+                ? "fadeUp 0.8s ease-out 0.5s forwards"
+                : "none",
+              opacity: 0,
+            }}
+          >
             <h4 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <span className="inline-block w-1 h-6 bg-gray-900 rounded-full animate-pulse" /> Education
+              <span className="inline-block w-1 h-6 bg-gray-900 rounded-full animate-pulse" />{" "}
+              Education
             </h4>
             <div className="space-y-2 text-gray-600">
               <p className="hover:text-gray-900 transition-colors">
                 <span className="font-semibold">
-                  Autonomous University of the State of Morelos (UAEM)
+                  Tarlac State University College of Computer Studies
                 </span>
               </p>
-              <p className="text-sm hover:text-gray-900 transition-colors">Bachelor's degree in Artificial Intelligence</p>
-              <p className="text-sm hover:text-gray-900 transition-colors">Currently studying</p>
-            </div>
-          </div>
-
-          <div className="transform transition-all duration-700 ease-out hover:translate-x-2" 
-               style={{ 
-                 animation: isVisible ? 'fadeUp 0.8s ease-out 0.6s forwards' : 'none',
-                 opacity: 0 
-               }}>
-            <h4 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <span className="inline-block w-1 h-6 bg-gray-900 rounded-full animate-pulse" /> Experience
-            </h4>
-            <div className="space-y-2 text-gray-600">
-              <p className="hover:text-gray-900 transition-colors">
-                <span className="font-semibold">
-                  Research Assistant
-                </span>{" "}
-                - UAEM CINC Morelos
+              <p className="text-sm hover:text-gray-900 transition-colors">
+                Bachelor's degree in Information Technology
               </p>
               <p className="text-sm hover:text-gray-900 transition-colors">
-                Projects in Data Science and its application in Time Series
-                (EEG, MEG, fMRI, Heart Rate)
+                Web and Mobile Development
               </p>
-              <p className="text-sm hover:text-gray-900 transition-colors">2025 – Currently</p>
             </div>
           </div>
 
-          <div className="transform transition-all duration-700 ease-out" 
-               style={{ 
-                 animation: isVisible ? 'fadeUp 0.8s ease-out 0.7s forwards' : 'none',
-                 opacity: 0 
-               }}>
+          <div
+            className="transform transition-all duration-700 ease-out hover:translate-x-2"
+            style={{
+              animation: isVisible
+                ? "fadeUp 0.8s ease-out 0.6s forwards"
+                : "none",
+              opacity: 0,
+            }}
+          >
             <h4 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <span className="inline-block w-1 h-6 bg-gray-900 rounded-full animate-pulse" /> Technical Skills
+              <span className="inline-block w-1 h-6 bg-gray-900 rounded-full animate-pulse" />{" "}
+              Experience
+            </h4>
+            <div className="space-y-6">
+              <div className="space-y-2 text-gray-600">
+                <p className="hover:text-gray-900 transition-colors">
+                  <span className="font-semibold">Web Developer</span> - My
+                  Creative Panda INC.
+                </p>
+                <div className="flex gap-2 text-sm">
+                  <span className="shrink-0">•</span>
+                  <p className="hover:text-gray-900 transition-colors">
+                    Developed and managed dynamic WordPress posts using custom tags
+                    and contents
+                  </p>
+                </div>
+                <div className="flex gap-2 text-sm">
+                  <span className="shrink-0">•</span>
+                  <p className="hover:text-gray-900 transition-colors">
+                    Implemented comprehensive site security and performance
+                    monitoring using SiteGuard configuration
+                  </p>
+                </div>
+                <p className="text-xs hover:text-gray-900 transition-colors">
+                  October 2023 – December 2023
+                </p>
+              </div>
+              <div className="space-y-2 text-gray-600">
+                <p className="hover:text-gray-900 transition-colors">
+                  <span className="font-semibold">Web Developer</span> - Fullstack
+                  HQ
+                </p>
+                <div className="flex gap-2 text-sm">
+                  <span className="shrink-0">•</span>
+                  <p className="hover:text-gray-900 transition-colors">
+                    Developed responsive web applications using React, Next.js, and
+                    React Native for cross-platform compatibility
+                  </p>
+                </div>
+                <div className="flex gap-2 text-sm">
+                  <span className="shrink-0">•</span>
+                  <p className="hover:text-gray-900 transition-colors">
+                    Built custom websites and landing pages utilizing WordPress
+                    builders including Elementor, Breakdance, Divi, and Gutenberg
+                  </p>
+                </div>
+                <div className="flex gap-2 text-sm">
+                  <span className="shrink-0">•</span>
+                  <p className="hover:text-gray-900 transition-colors">
+                    Built and customized e-commerce sites on Shopify platform with
+                    focus on user experience and conversion optimization using
+                    custom Liquid codes and Shopify builder.
+                  </p>
+                </div>
+                <p className="text-xs hover:text-gray-900 transition-colors">
+                  February 2024 – Current
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="transform transition-all duration-700 ease-out"
+            style={{
+              animation: isVisible
+                ? "fadeUp 0.8s ease-out 0.7s forwards"
+                : "none",
+              opacity: 0,
+            }}
+          >
+            <h4 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+              <span className="inline-block w-1 h-6 bg-gray-900 rounded-full animate-pulse" />{" "}
+              Technical Skills
             </h4>
             <div className="flex flex-wrap gap-2">
               {[
@@ -139,8 +212,10 @@ export function About() {
                   key={skill}
                   className="px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-full text-sm font-medium hover:bg-gray-900 hover:text-white hover:scale-110 transition-all duration-300 transform hover:rotate-1"
                   style={{
-                    animation: isVisible ? `fadeUp 0.5s ease-out ${0.8 + index * 0.05}s forwards` : 'none',
-                    opacity: 0
+                    animation: isVisible
+                      ? `fadeUp 0.5s ease-out ${0.8 + index * 0.05}s forwards`
+                      : "none",
+                    opacity: 0,
                   }}
                 >
                   {skill}
@@ -153,4 +228,3 @@ export function About() {
     </section>
   );
 }
-

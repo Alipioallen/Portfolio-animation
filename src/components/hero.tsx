@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 
-const phrases = ["Artificial Intelligence", "Web Developer"];
+const phrases = ["Software Engineer", "Web Developer"];
 
 export function Hero() {
   const [displayedText, setDisplayedText] = useState("");
@@ -14,12 +14,20 @@ export function Hero() {
   useEffect(() => {
     // Hero entrance animation
     setIsVisible(true);
-    
+
     let timeoutId: NodeJS.Timeout;
 
     const typeText = () => {
-      if (currentCharIndexRef.current <= phrases[currentPhraseIndexRef.current].length) {
-        setDisplayedText(phrases[currentPhraseIndexRef.current].slice(0, currentCharIndexRef.current));
+      if (
+        currentCharIndexRef.current <=
+        phrases[currentPhraseIndexRef.current].length
+      ) {
+        setDisplayedText(
+          phrases[currentPhraseIndexRef.current].slice(
+            0,
+            currentCharIndexRef.current,
+          ),
+        );
         currentCharIndexRef.current++;
         timeoutId = setTimeout(typeText, 100);
       } else {
@@ -28,7 +36,8 @@ export function Hero() {
           setOpacity(0);
           timeoutId = setTimeout(() => {
             // Change to next phrase
-            currentPhraseIndexRef.current = (currentPhraseIndexRef.current + 1) % 2;
+            currentPhraseIndexRef.current =
+              (currentPhraseIndexRef.current + 1) % 2;
             currentCharIndexRef.current = 0;
             setDisplayedText("");
             setOpacity(1);
@@ -50,9 +59,12 @@ export function Hero() {
   }, []);
 
   return (
-    <section id="home" className={`min-h-screen flex items-center justify-center px-4 sm:px-6 py-20 pt-32 sm:pt-20 transition-all duration-1000 ${
-      isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-    }`}>
+    <section
+      id="home"
+      className={`min-h-screen flex items-center justify-center px-4 sm:px-6 py-20 pt-32 sm:pt-20 transition-all duration-1000 ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
       <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
         {/* Left column - Information */}
         <div className="space-y-6 sm:space-y-8 animate-fade-up text-center lg:text-left">
@@ -76,11 +88,16 @@ export function Hero() {
           </div>
 
           <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0 font-light tracking-wide transform transition-all duration-700 hover:translate-x-2 hover:text-gray-900">
-            I'm a student of <span className="font-semibold text-gray-900 bg-gradient-to-r from-gray-100 to-transparent px-2 py-1 rounded">Artificial Intelligence</span> and web developer. I'm passionate about creating, learning and bringing my ideas to life through programming and creativity.
+            I'm a{" "}
+            <span className="font-semibold text-gray-900 bg-gradient-to-r from-gray-100 to-transparent px-2 py-1 rounded">
+              Frontend Developer
+            </span>{" "}
+            with a solid foundation in web development, eager to continue
+            growing technical skills in a collaborative team environment.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-up-delay-400 justify-center lg:justify-start">
-            <a 
+            <a
               href="https://instagram.com/luiscortespenguin"
               target="_blank"
               rel="noopener noreferrer"
@@ -102,29 +119,29 @@ export function Hero() {
               </svg>
               <span className="font-medium">Hire Me</span>
             </a>
-            <a 
-              href="/cv.pdf" 
+            <a
+              href="/Alipio-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-black text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full flex items-center justify-center gap-2 sm:gap-3 hover:bg-gray-800 hover:scale-105 hover:rotate-1 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer text-sm sm:text-base"
             >
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="group-hover:translate-y-1 transition-transform"
-            >
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-              <polyline points="7 10 12 15 17 10" />
-              <line x1="12" y1="15" x2="12" y2="3" />
-            </svg>
-            <span className="font-medium">Download CV</span>
-          </a>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="group-hover:translate-y-1 transition-transform"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              <span className="font-medium">Download CV</span>
+            </a>
           </div>
 
           <div className="border-t border-gray-200 pt-6 sm:pt-8 transform transition-all duration-500 hover:border-gray-300">
@@ -189,7 +206,7 @@ export function Hero() {
               <img
                 src="/me.jpg"
                 alt="Allen"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
@@ -198,4 +215,3 @@ export function Hero() {
     </section>
   );
 }
-
