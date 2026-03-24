@@ -54,7 +54,7 @@ export function Hero() {
       isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
     }`}>
       <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
-        {/* Columna izquierda - Información */}
+        {/* Left column - Information */}
         <div className="space-y-6 sm:space-y-8 animate-fade-up text-center lg:text-left">
           <div className="space-y-3 sm:space-y-4">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight transform transition-all duration-700 hover:scale-105">
@@ -181,7 +181,7 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Columna derecha - Imagen */}
+        {/* Right column - Image */}
         <div className="flex justify-center lg:justify-end animate-fade-up-delay-600">
           <div className="group relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[32rem] lg:h-[32rem] xl:w-[36rem] xl:h-[36rem]">
             <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-gray-50 to-gray-200 rounded-3xl shadow-2xl transform group-hover:scale-105 transition-transform duration-300 border border-gray-100" />

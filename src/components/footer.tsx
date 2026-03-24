@@ -3,7 +3,7 @@ export function Footer() {
     <footer className="bg-black text-white py-12 sm:py-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12 mb-8 sm:mb-12">
-          {/* Columna 1 - Información */}
+          {/* Column 1 - Information */}
           <div className="text-center sm:text-left">
             <h3 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
               Allen
@@ -14,7 +14,7 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Columna 2 - Enlaces rápidos */}
+          {/* Column 2 - Quick Links */}
           <div className="text-center sm:text-left">
             <h4 className="text-xs font-semibold text-gray-500 mb-4 sm:mb-5 tracking-widest uppercase">
               Quick Links
@@ -47,7 +47,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Columna 3 - Redes sociales */}
+          {/* Column 3 - Social Networks */}
           <div className="text-center sm:text-left">
             <h4 className="text-xs font-semibold text-gray-500 mb-4 sm:mb-5 tracking-widest uppercase">
               Follow Me

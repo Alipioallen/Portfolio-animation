@@ -36,7 +36,7 @@ export function About() {
       }`}
     >
       <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Columna izquierda - Imagen */}
+        {/* Left column - Image */}
         <div className="flex justify-center lg:justify-start animate-fade-up">
           <div className="w-96 h-[32rem] lg:w-[30rem] lg:h-[40rem] overflow-hidden rounded-3xl shadow-2xl">
             <img
@@ -47,7 +47,7 @@ export function About() {
           </div>
         </div>
 
-        {/* Columna derecha - Información */}
+        {/* Right column - Information */}
         <div className="space-y-8">
           <div className="transform transition-all duration-700 ease-out hover:scale-105" 
                style={{ 
