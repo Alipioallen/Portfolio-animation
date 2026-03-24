@@ -70,7 +70,7 @@ export function Hero() {
         <div className="space-y-6 sm:space-y-8 animate-fade-up text-center lg:text-left">
           <div className="space-y-3 sm:space-y-4">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight transform transition-all duration-700 hover:scale-105">
-              Hello, I'm{" "}
+              Hello, I&apos;m{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 animate-pulse">
                 Allen
               </span>
@@ -88,10 +88,10 @@ export function Hero() {
           </div>
 
           <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0 font-light tracking-wide transform transition-all duration-700 hover:translate-x-2 hover:text-gray-900">
-            I'm a{" "}
+            I&apos;m a{" "}
             <span className="font-semibold text-gray-900 bg-gradient-to-r from-gray-100 to-transparent px-2 py-1 rounded">
               Frontend Developer
-            </span>{" "}
+            </span>{" "}}
             with a solid foundation in web development, eager to continue
             growing technical skills in a collaborative team environment.
           </p>

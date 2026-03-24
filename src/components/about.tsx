@@ -79,7 +79,7 @@ export function About() {
               Allen Alipio
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              I'm a Frontend Developer with a solid foundation in web
+              I&apos;m a Frontend Developer with a solid foundation in web
               development, demonstrated ability to contribute effectively to
               diverse projects while maintaining a focus on frontend
               development.
