@@ -61,7 +61,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className={`min-h-screen flex items-center justify-center px-4 sm:px-6 py-20 pt-32 sm:pt-20 transition-all duration-1000 ${
+      className={`min-h-screen flex items-center justify-center mt-8 px-4 sm:px-6 py-20 pt-32 sm:pt-20 transition-all duration-1000 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >

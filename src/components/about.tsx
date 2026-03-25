@@ -111,6 +111,9 @@ export function About() {
               <p className="text-sm hover:text-gray-900 transition-colors">
                 Web and Mobile Development
               </p>
+              <p className="text-xs hover:text-gray-900 transition-colors">
+                2019 – 2023
+              </p>
             </div>
           </div>
 
@@ -136,8 +139,8 @@ export function About() {
                 <div className="flex gap-2 text-sm">
                   <span className="shrink-0">•</span>
                   <p className="hover:text-gray-900 transition-colors">
-                    Developed and managed dynamic WordPress posts using custom tags
-                    and contents
+                    Developed and managed dynamic WordPress posts using custom
+                    tags and contents
                   </p>
                 </div>
                 <div className="flex gap-2 text-sm">
@@ -153,29 +156,30 @@ export function About() {
               </div>
               <div className="space-y-2 text-gray-600">
                 <p className="hover:text-gray-900 transition-colors">
-                  <span className="font-semibold">Web Developer</span> - Fullstack
-                  HQ
+                  <span className="font-semibold">Web Developer</span> -
+                  Fullstack HQ
                 </p>
                 <div className="flex gap-2 text-sm">
                   <span className="shrink-0">•</span>
                   <p className="hover:text-gray-900 transition-colors">
-                    Developed responsive web applications using React, Next.js, and
-                    React Native for cross-platform compatibility
+                    Developed responsive web applications using React, Next.js,
+                    and React Native for cross-platform compatibility
                   </p>
                 </div>
                 <div className="flex gap-2 text-sm">
                   <span className="shrink-0">•</span>
                   <p className="hover:text-gray-900 transition-colors">
                     Built custom websites and landing pages utilizing WordPress
-                    builders including Elementor, Breakdance, Divi, and Gutenberg
+                    builders including Elementor, Breakdance, Divi, and
+                    Gutenberg
                   </p>
                 </div>
                 <div className="flex gap-2 text-sm">
                   <span className="shrink-0">•</span>
                   <p className="hover:text-gray-900 transition-colors">
-                    Built and customized e-commerce sites on Shopify platform with
-                    focus on user experience and conversion optimization using
-                    custom Liquid codes and Shopify builder.
+                    Built and customized e-commerce sites on Shopify platform
+                    with focus on user experience and conversion optimization
+                    using custom Liquid codes and Shopify builder.
                   </p>
                 </div>
                 <p className="text-xs hover:text-gray-900 transition-colors">
