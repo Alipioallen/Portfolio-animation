@@ -55,6 +55,24 @@ export function Projects() {
       image: "/clohane.png",
       showOnlyDemo: true,
     },
+    {
+      id: 4,
+      title: "DMND",
+      description: "Site for leading apparel merchandise",
+      technologies: ["WordPress", "Elementor", "PHP", "Javascript"],
+      demo: "https://dmnd.com.au/",
+      image: "/dmnd.png",
+      showOnlyDemo: true,
+    },
+    {
+      id: 5,
+      title: "Lodg",
+      description: "All-in-one tax automation platform for modern businesses",
+      technologies: ["Next.js", "Node.js", "TypeScript", "Tailwind", "React Native"],
+      demo: "https://lodg.co.nz",
+      image: "/lodg.png",
+      showOnlyDemo: true,
+    },
   ];
 
   return (

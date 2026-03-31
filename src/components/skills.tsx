@@ -100,11 +100,47 @@ export function Skills() {
     <section
       ref={sectionRef}
       id="skills"
-      className={`min-h-screen flex items-center justify-center px-4 sm:px-6 py-20 bg-white transition-all duration-1000 ${
+      className={`min-h-screen flex items-center justify-center px-4 sm:px-6 py-20 bg-gray-50 transition-all duration-1000 relative overflow-hidden ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <div className="w-full max-w-7xl">
+      {/* Floating background animation */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div
+          className="absolute top-20 left-10 w-2 h-32 bg-gray-900/20 rounded-full animate-float"
+          style={{ animationDelay: "0s", animationDuration: "3s" }}
+        />
+        <div
+          className="absolute top-40 right-20 w-1 h-24 bg-gray-900/20 rounded-full animate-float"
+          style={{ animationDelay: "1s", animationDuration: "4s" }}
+        />
+        <div
+          className="absolute bottom-40 left-1/4 w-2 h-40 bg-gray-900/20 rounded-full animate-float"
+          style={{ animationDelay: "2s", animationDuration: "3.5s" }}
+        />
+        <div
+          className="absolute top-1/3 right-1/3 w-1 h-20 bg-gray-900/20 rounded-full animate-float"
+          style={{ animationDelay: "0.5s", animationDuration: "4.5s" }}
+        />
+        <div
+          className="absolute bottom-20 right-1/4 w-2 h-28 bg-gray-900/20 rounded-full animate-float"
+          style={{ animationDelay: "1.5s", animationDuration: "3s" }}
+        />
+        <div
+          className="absolute top-1/2 left-1/3 w-1 h-36 bg-gray-900/20 rounded-full animate-float"
+          style={{ animationDelay: "2.5s", animationDuration: "4s" }}
+        />
+        <div
+          className="absolute bottom-1/3 right-10 w-2 h-32 bg-gray-900/20 rounded-full animate-float"
+          style={{ animationDelay: "0.8s", animationDuration: "3.5s" }}
+        />
+        <div
+          className="absolute top-20 right-1/2 w-1 h-24 bg-gray-900/20 rounded-full animate-float"
+          style={{ animationDelay: "1.8s", animationDuration: "4s" }}
+        />
+      </div>
+
+      <div className="w-full max-w-7xl relative z-10">
         <div className="text-center mb-16 sm:mb-20">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600">
