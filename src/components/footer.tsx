@@ -8,7 +8,7 @@ export function Footer() {
             <h3 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
               Allen Alipio
             </h3>
-            <p className="text-gray-400 leading-relaxed text-sm">
+            <p className="text-white leading-relaxed text-sm">
               I&apos;m a Frontend Developer with a solid foundation in web
               development, eager to continue growing technical skills in a
               collaborative team environment.
@@ -17,14 +17,14 @@ export function Footer() {
 
           {/* Column 2 - Quick Links */}
           <div className="text-center sm:text-left">
-            <h4 className="text-xs font-semibold text-gray-500 mb-4 sm:mb-5 tracking-widest uppercase">
+            <h4 className="text-xs font-semibold text-white mb-4 sm:mb-5 tracking-widest uppercase">
               Quick Links
             </h4>
             <ul className="space-y-2 sm:space-y-3">
               <li>
                 <a
                   href="#home"
-                  className="text-gray-400 hover:text-white transition-colors text-sm duration-200"
+                  className="text-white hover:text-white transition-colors text-sm duration-200"
                 >
                   Home
                 </a>
@@ -32,7 +32,7 @@ export function Footer() {
               <li>
                 <a
                   href="#skills"
-                  className="text-gray-400 hover:text-white transition-colors text-sm duration-200"
+                  className="text-white hover:text-white transition-colors text-sm duration-200"
                 >
                   Skills
                 </a>
@@ -40,7 +40,7 @@ export function Footer() {
               <li>
                 <a
                   href="#projects"
-                  className="text-gray-400 hover:text-white transition-colors text-sm duration-200"
+                  className="text-white hover:text-white transition-colors text-sm duration-200"
                 >
                   Projects
                 </a>
@@ -48,7 +48,7 @@ export function Footer() {
               <li>
                 <a
                   href="#services"
-                  className="text-gray-400 hover:text-white transition-colors text-sm duration-200"
+                  className="text-white hover:text-white transition-colors text-sm duration-200"
                 >
                   Services
                 </a>
@@ -58,7 +58,7 @@ export function Footer() {
 
           {/* Column 3 - Social Networks */}
           <div className="text-center sm:text-left">
-            <h4 className="text-xs font-semibold text-gray-500 mb-4 sm:mb-5 tracking-widest uppercase">
+            <h4 className="text-xs font-semibold text-white mb-4 sm:mb-5 tracking-widest uppercase">
               Follow Me
             </h4>
             <div className="flex gap-4 justify-center sm:justify-start">
@@ -66,7 +66,7 @@ export function Footer() {
                 href="https://instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-pink-500 transition-all hover:scale-110 transform duration-200"
+                className="text-white hover:text-pink-500 transition-all hover:scale-110 transform duration-200"
               >
                 <svg
                   width="22"
@@ -81,7 +81,7 @@ export function Footer() {
                 href="https://www.linkedin.com/in/allen-alipio-1966b7285/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-500 transition-all hover:scale-110 transform duration-200"
+                className="text-white hover:text-blue-500 transition-all hover:scale-110 transform duration-200"
               >
                 <svg
                   width="22"
@@ -96,7 +96,7 @@ export function Footer() {
                 href="https://github.com/Alipioallen"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-all hover:scale-110 transform duration-200"
+                className="text-white hover:text-white transition-all hover:scale-110 transform duration-200"
               >
                 <svg
                   width="22"
@@ -113,7 +113,7 @@ export function Footer() {
 
         {/* Divider */}
         <div className="border-t border-gray-900 pt-6 sm:pt-8">
-          <p className="text-gray-500 text-center text-xs sm:text-sm">
+          <p className="text-white text-center text-xs sm:text-sm">
             © {new Date().getFullYear()} Allen Alipio. All rights reserved.
           </p>
         </div>
