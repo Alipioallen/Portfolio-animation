@@ -96,7 +96,7 @@ export function About() {
             }}
           >
             <h4 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <span className="inline-block w-1 h-6 bg-gray-900 rounded-full animate-pulse" />{" "}
+              <span className="inline-block w-1 h-6 bg-[#004C6D] rounded-full animate-pulse" />{" "}
               Education
             </h4>
             <div className="space-y-2 text-gray-600">
@@ -127,7 +127,7 @@ export function About() {
             }}
           >
             <h4 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <span className="inline-block w-1 h-6 bg-gray-900 rounded-full animate-pulse" />{" "}
+              <span className="inline-block w-1 h-6 bg-[#004C6D] rounded-full animate-pulse" />{" "}
               Experience
             </h4>
             <div className="space-y-6">

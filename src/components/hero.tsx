@@ -99,7 +99,7 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-up-delay-400 justify-center lg:justify-start">
             <a
               href="mailto:alipioallen5@gmail.com"
-              className="group bg-white border-2 border-black text-black px-6 py-3 sm:px-8 sm:py-4 rounded-full flex items-center justify-center gap-2 sm:gap-3 hover:bg-black hover:text-white hover:scale-105 hover:rotate-1 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer text-sm sm:text-base"
+              className="group bg-white border-2 border-[#004C6D] text-[#004C6D] px-6 py-3 sm:px-8 sm:py-4 rounded-full flex items-center justify-center gap-2 sm:gap-3 hover:bg-[#004C6D] hover:text-white hover:scale-105 hover:rotate-1 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer text-sm sm:text-base"
             >
               <svg
                 width="18"
@@ -121,7 +121,7 @@ export function Hero() {
               href="/Alipio-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-black text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full flex items-center justify-center gap-2 sm:gap-3 hover:bg-gray-800 hover:scale-105 hover:rotate-1 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer text-sm sm:text-base"
+              className="group bg-[#004C6D] text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full flex items-center justify-center gap-2 sm:gap-3 hover:bg-[#002F42] hover:scale-105 hover:rotate-1 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer text-sm sm:text-base"
             >
               <svg
                 width="18"

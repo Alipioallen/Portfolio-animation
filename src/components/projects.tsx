@@ -92,7 +92,7 @@ export function Projects() {
             </span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
-            Some of the projects I have worked on
+            Projects I've Built and Contributed To
           </p>
         </div>
 
@@ -103,7 +103,7 @@ export function Projects() {
               href={project.demo}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group bg-white border border-gray-200 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:border-gray-900 transition-all duration-500 hover:-translate-y-2 transform cursor-pointer block ${
+              className={`group bg-white border border-gray-200 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:border-[#004C6D] transition-all duration-500 hover:-translate-y-2 transform cursor-pointer block ${
                 isVisible
                   ? "translate-y-0 opacity-100"
                   : "translate-y-10 opacity-0"
@@ -116,7 +116,7 @@ export function Projects() {
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#004C6D]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
 
               <div className="p-6">

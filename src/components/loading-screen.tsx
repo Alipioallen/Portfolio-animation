@@ -39,7 +39,7 @@ export function LoadingScreen() {
   const letters = name.split("");
 
   return (
-    <div className="fixed inset-0 bg-black z-50 flex items-center justify-center overflow-hidden">
+    <div className="fixed inset-0 bg-[#004C6D] z-50 flex items-center justify-center overflow-hidden">
       {/* Background grid with fixed patterns */}
       <div className="absolute inset-0 overflow-hidden opacity-10">
         <div className="absolute w-1 h-1 bg-white rounded-full top-[10%] left-[20%] animate-float" style={{ animationDelay: "0s", animationDuration: "3s" }} />

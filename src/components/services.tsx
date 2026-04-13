@@ -159,7 +159,7 @@ export function Services() {
           {services.map((service, index) => (
             <div
               key={service.id}
-              className={`group relative bg-white rounded-3xl p-8 border border-gray-200 shadow-lg hover:shadow-2xl hover:border-gray-900 transition-all duration-500 hover:-translate-y-3 transform overflow-hidden ${
+              className={`group relative bg-white rounded-3xl p-8 border border-gray-200 shadow-lg hover:shadow-2xl hover:border-[#004C6D] transition-all duration-500 hover:-translate-y-3 transform overflow-hidden ${
                 isVisible
                   ? "translate-y-0 opacity-100"
                   : "translate-y-10 opacity-0"
@@ -170,7 +170,7 @@ export function Services() {
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-gray-900/5 to-transparent rounded-full blur-2xl group-hover:from-gray-900/10 transition-colors duration-500" />
 
               <div className="relative z-10">
-                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-gray-900 to-gray-700 rounded-2xl flex items-center justify-center text-white mb-4 sm:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg mx-auto md:mx-0">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-[#004C6D] to-[#002F42] rounded-2xl flex items-center justify-center text-white mb-4 sm:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg mx-auto md:mx-0">
                   {service.icon}
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 group-hover:text-black transition-colors text-center md:text-left">
@@ -190,7 +190,7 @@ export function Services() {
         >
           <a
             href="mailto:alipioallen5@gmail.com"
-            className="group bg-white border-2 border-black text-black px-6 py-3 sm:px-10 sm:py-5 rounded-full flex items-center gap-2 sm:gap-3 hover:bg-black hover:text-white hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer text-base sm:text-lg font-semibold"
+            className="group bg-white border-2 border-[#004C6D] text-[#004C6D] px-6 py-3 sm:px-10 sm:py-5 rounded-full flex items-center gap-2 sm:gap-3 hover:bg-[#004C6D] hover:text-white hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer text-base sm:text-lg font-semibold"
           >
             <svg
               width="22"

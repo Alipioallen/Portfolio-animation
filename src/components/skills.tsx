@@ -173,14 +173,14 @@ export function Skills() {
               >
                 <div className="h-full bg-white border-2 border-gray-100 rounded-xl shadow-sm p-8">
                   <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
-                    <span className="inline-block w-1 h-8 bg-gradient-to-b from-gray-900 to-gray-600 rounded-full" />
+                    <span className="inline-block w-1 h-8 bg-gradient-to-b from-[#004C6D] to-[#002F42] rounded-full" />
                     {category}
                   </h3>
                   <div className="flex flex-wrap gap-3">
                     {skills.map((skill, skillIndex) => (
                       <span
                         key={skill}
-                        className="px-4 py-2 bg-gray-900 border border-gray-900 text-white rounded-lg text-sm font-medium hover:scale-110 transition-all duration-300 transform"
+                        className="px-4 py-2 bg-[#004C6D] border border-[#004C6D] text-white rounded-lg text-sm font-medium hover:scale-110 transition-all duration-300 transform"
                         style={{
                           animation: isVisible
                             ? `fadeUp 0.5s ease-out ${0.3 + index * 0.15 + skillIndex * 0.04}s forwards`
